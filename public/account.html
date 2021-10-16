@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEAR Library</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="icon" href="./img/near_logo_stack 1.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between py-8">
+
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center">
+                    <img src="./img/near_logo_stack 1.png" alt="" class="">
+                    <span class="block w-0.5 h-12 ml-1 mr-2 rounded-full bg-black"></span>
+                    <p class="text-4xl font-bold pb-2">Library</p>
+                </a>
+
+                <!-- Login btn -->
+                <div  class="flex items-center">
+                    <img src="./img/near_logo_stack 1.png" alt="" class="pt-3">
+                    <div class="ml-4">
+                        <p class="font-bold text-xl">oliinykk<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">.near</span></p>
+                        <a href="#" class="flex items-center font-bold text-xs text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M2.97874 1.78723C2.2737 1.78723 1.70215 2.35878 1.70215 3.06383V10.7234C1.70215 11.4284 2.2737 12 2.97874 12H7.44683C8.15187 12 8.72342 11.4284 8.72342 10.7234V10.2979C8.72342 10.0629 8.53291 9.87234 8.29789 9.87234C8.06288 9.87234 7.87236 10.0629 7.87236 10.2979V10.7234C7.87236 10.9584 7.68184 11.1489 7.44683 11.1489H2.97874C2.74373 11.1489 2.55321 10.9584 2.55321 10.7234V3.06383C2.55321 2.82881 2.74373 2.6383 2.97874 2.6383H7.44683C7.68184 2.6383 7.87236 2.82881 7.87236 3.06383V3.48936C7.87236 3.72437 8.06288 3.91489 8.29789 3.91489C8.53291 3.91489 8.72342 3.72437 8.72342 3.48936V3.06383C8.72342 2.35878 8.15187 1.78723 7.44683 1.78723H2.97874Z" fill="url(#paint0_linear_7:1818)"/>
+                                <path d="M6.24018 5.50954C6.41583 5.3534 6.43165 5.08444 6.27552 4.90878C6.11938 4.73313 5.85042 4.71731 5.67476 4.87345L3.40207 6.89362L5.67476 8.91379C5.85042 9.06993 6.11938 9.05411 6.27552 8.87846C6.43165 8.7028 6.41583 8.43384 6.24018 8.2777L5.16181 7.31915H10.6383C10.8733 7.31915 11.0639 7.12863 11.0639 6.89362C11.0639 6.6586 10.8733 6.46809 10.6383 6.46809H5.16181L6.24018 5.50954Z" fill="url(#paint1_linear_7:1818)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7:1818" x1="10.5422" y1="10.9787" x2="3.14219" y2="10.6139" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FE7B02"/>
+                                        <stop offset="1" stop-color="#FF9533"/>
+                                    </linearGradient>
+                                <linearGradient id="paint1_linear_7:1818" x1="10.5422" y1="10.9787" x2="3.14219" y2="10.6139" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FE7B02"/>
+                                    <stop offset="1" stop-color="#FF9533"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Account info section -->
+    <section class="relative w-full h-80">
+        
+        <div class="relative container mx-auto px-6 z-10">
+            <img src="./img/add-note.png" alt="" class="hidden lg:block absolute">
+            <img src="./img/rates-note.png" alt="" class="hidden lg:block absolute right-0 top-20">
+        </div>
+
+        <div class="flex justify-center">
+            <img src="./img/Illu.png" alt="" class="absolute top-10">
+        </div> 
+        
+        <div class="relative flex flex-col items-center z-20">
+            <div class="w-36 h-36 bg-white rounded-full shadow-2xl flex items-center justify-center p-6">
+                <img src="./img/near_logo_stack 2.png" alt="" class="w-full">
+            </div>
+            <p class="text-center font-bold text-4xl mt-6">oliinykk<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">.near</span></p>
+            <p class="text-center mt-3 font-bold text-4xl">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400">12</span>
+                books in property
+            </p>
+            <a href="./add-book.html" class="w-72 h-14 mt-7 bg-gradient-to-r from-orange-400 to-orange-300 rounded-full p-0.5 transform active:scale-95 duration-100">
+                <div class="w-full h-full rounded-full bg-transparent hover:bg-white">
+                    <p class="flex justify-center items-center h-full text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-white hover:from-orange-400 hover:text-orange-300">Add books +</p>
+                </div>
+            </a>
+        </div>
+        
+    </section>
+
+    <!-- All books section -->
+    <section>
+        <div class="container mx-auto px-6 mt-20">
+
+            <div class="flex items-baseline justify-between pt-4 lg:pt-9 pb-10 lg:pb-20 gap-y-8">
+
+                <!-- Title books -->
+                <div class="flex">
+
+                    <div class="">
+                        <p class="text-4xl lg:text-6xl font-bold">My books</p>
+                        <p class="text-sm lg:text-lg mt-3">Everything what do you want!</p>
+                    </div>
+
+                    <img src="./img/!!.png" alt="" class="ml-4">
+
+                </div>
+                
+                <!-- Sort -->
+                <div class="flex space-x-4">
+
+                    <a href="#" class="flex text-lg font-bold hover:text-orange-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13.4472 20.9051C13.786 20.7376 14 20.3951 14 20.0204V14.6999C14 14.4376 14.1054 14.186 14.2929 
+                            14.0005L20.414 7.94576C20.789 7.57483 21 7.07135 21 6.54611V3.98915C21 3.44215 20.553 3 20 3H4C3.447 
+                            3 3 3.44215 3 3.98915V6.54611C3 7.07135 3.211 7.57483 3.586 7.94576L9.70711 14.0005C9.89464 14.186 10 
+                            14.4376 10 14.6999V21.0096C10 21.7449 10.7823 22.2231 11.4472 21.8943L13.4472 20.9051Z" fill="currentColor"/>
+                        </svg>
+                        Sort by Name
+                    </a>
+                    <a href="#" class="flex text-lg font-bold hover:text-orange-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13.4472 20.9051C13.786 20.7376 14 20.3951 14 20.0204V14.6999C14 14.4376 14.1054 14.186 14.2929 
+                            14.0005L20.414 7.94576C20.789 7.57483 21 7.07135 21 6.54611V3.98915C21 3.44215 20.553 3 20 3H4C3.447 
+                            3 3 3.44215 3 3.98915V6.54611C3 7.07135 3.211 7.57483 3.586 7.94576L9.70711 14.0005C9.89464 14.186 10 
+                            14.4376 10 14.6999V21.0096C10 21.7449 10.7823 22.2231 11.4472 21.8943L13.4472 20.9051Z" fill="currentColor"/>
+                        </svg>
+                        Sort by Date
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Books -->
+            <div class="px-10 md:px-20 lg:px-10 xl:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-20 gap-y-8">
+
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="./book-page.html" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- One book -->
+                <div class="">
+
+                    <!-- Book cover -->
+                    <a href="#" class="">
+                        <img src="./img/book.png" alt="" class="w-full transform hover:scale-105 duration-150 hover:shadow-2xl">
+                        
+                    </a>
+
+                    <!-- Rate stars -->
+                    <div class="flex mt-2">
+
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+                        <!-- One star -->
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                            </svg>
+                        </a>
+
+                    </div>
+
+                    <!-- Book name -->
+                    <a href="#" class="text-lg font-bold mt-3">Small brave moves</a>
+
+                    <!-- Book description -->
+                    <p class="text-sm mt-1">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim 
+
+                        <a href="#" class="inline-block text-sm text-transparent font-bold bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform hover:scale-105 active:scale-100 duration-100">Read more</a>
+                    </p>
+                    
+                    <!-- Pages - Author -->
+                    <div class="flex mt-5">
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-1">546</p>
+                        </div>
+                        <div class="flex w-1/2">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-1">Nicole Bianchi da Silva</p>
+                        </div>
+                    </div>
+
+                    <!-- Owner - Date -->
+                    <div class="flex justify-between mt-4">
+                        <a href="#" class="flex items-center hover:underline">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <rect width="16" height="16" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                            </svg>
+                            oliinykkk.near
+                        </a>
+                        <p class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                </svg>
+                            22.05.2021
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Pagination -->
+            <div class="flex justify-center items-center my-32">
+                <ul class="flex text-lg font-bold">
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">Previous</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">1</a></li>
+                    <!-- Active element (just need to add class - border-b-2 ) -->
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400 border-b-2">2</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">3</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">4</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">5</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">6</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">7</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">8</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">9</a></li>
+                    <li><a href="#" class="pb-2 px-1 md:px-3 hover:border-b-2 border-orange-400">Next</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto px-6 mt-20">
+            <div class="flex flex-col md:flex-row">
+
+                <div class="flex flex-col">
+                    <a href="#" class="flex items-center">
+                        <img src="./img/near_logo_stack 1.png" alt="" class="">
+                        <span class="block w-0.5 h-12 ml-1 mr-2 rounded-full bg-black"></span>
+                        <p class="text-4xl font-bold pb-2">Library</p>
+                    </a>
+                    <a href="#" class="mt-1">
+                        info@nearlibrary
+                    </a>
+                    <a href="#" class="mt-1">
+                        1-232-3434 (Main)
+                    </a>
+                </div>
+
+                <div class="w-auto md:ml-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-14 lg:gap-x-28 xl:gap-x-40 gap-y-10">
+                    <!-- About -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">About</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="./alert-successful.html" class="hover:text-black font-medium">About contract</a></li>
+                        <li><a href="./alert-failed.html" class="hover:text-black font-medium">About NEAR </a></li>
+                        <li><a href="./alert-delete.html" class="hover:text-black font-medium">About NEAR ecosystem</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">Community</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="" class="hover:text-black font-medium">Community OS Wiki</a></li>
+                        <li><a href="" class="hover:text-black font-medium">Forum</a></li>
+                        <li><a href="" class="hover:text-black font-medium">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">Help</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="" class="hover:text-black font-medium">Support</a></li>
+                        <li><a href="" class="hover:text-black font-medium">info@nearanalytics</a></li>
+                        <li><a href="" class="hover:text-black font-medium">1-232-3434 (Main)</a></li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-10">
+                <p class="">© 2021 NEAR Ltd</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEAR Library</title>
+    <link rel="stylesheet" href="./build/tailwind.css">
+    <link rel="icon" href="./img/near_logo_stack 1.png">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <nav>
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between py-8">
+
+                <!-- Logo -->
+                <a href="./index.html" class="flex items-center">
+                    <img src="./img/near_logo_stack 1.png" alt="" class="">
+                    <span class="block w-0.5 h-12 ml-1 mr-2 rounded-full bg-black"></span>
+                    <p class="text-4xl font-bold pb-2">Library</p>
+                </a>
+
+                <!-- Login btn -->
+                <div  class="flex items-center">
+                    <img src="./img/near_logo_stack 1.png" alt="" class="pt-3">
+                    <div class="ml-4">
+                        <p class="font-bold text-xl">oliinykk<span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300">.near</span></p>
+                        <a href="#" class="flex items-center font-bold text-xs text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <path d="M2.97874 1.78723C2.2737 1.78723 1.70215 2.35878 1.70215 3.06383V10.7234C1.70215 11.4284 2.2737 12 2.97874 12H7.44683C8.15187 12 8.72342 11.4284 8.72342 10.7234V10.2979C8.72342 10.0629 8.53291 9.87234 8.29789 9.87234C8.06288 9.87234 7.87236 10.0629 7.87236 10.2979V10.7234C7.87236 10.9584 7.68184 11.1489 7.44683 11.1489H2.97874C2.74373 11.1489 2.55321 10.9584 2.55321 10.7234V3.06383C2.55321 2.82881 2.74373 2.6383 2.97874 2.6383H7.44683C7.68184 2.6383 7.87236 2.82881 7.87236 3.06383V3.48936C7.87236 3.72437 8.06288 3.91489 8.29789 3.91489C8.53291 3.91489 8.72342 3.72437 8.72342 3.48936V3.06383C8.72342 2.35878 8.15187 1.78723 7.44683 1.78723H2.97874Z" fill="url(#paint0_linear_7:1818)"/>
+                                <path d="M6.24018 5.50954C6.41583 5.3534 6.43165 5.08444 6.27552 4.90878C6.11938 4.73313 5.85042 4.71731 5.67476 4.87345L3.40207 6.89362L5.67476 8.91379C5.85042 9.06993 6.11938 9.05411 6.27552 8.87846C6.43165 8.7028 6.41583 8.43384 6.24018 8.2777L5.16181 7.31915H10.6383C10.8733 7.31915 11.0639 7.12863 11.0639 6.89362C11.0639 6.6586 10.8733 6.46809 10.6383 6.46809H5.16181L6.24018 5.50954Z" fill="url(#paint1_linear_7:1818)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_7:1818" x1="10.5422" y1="10.9787" x2="3.14219" y2="10.6139" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#FE7B02"/>
+                                        <stop offset="1" stop-color="#FF9533"/>
+                                    </linearGradient>
+                                <linearGradient id="paint1_linear_7:1818" x1="10.5422" y1="10.9787" x2="3.14219" y2="10.6139" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#FE7B02"/>
+                                    <stop offset="1" stop-color="#FF9533"/>
+                                </linearGradient>
+                                </defs>
+                            </svg>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Book info section -->
+    <section>
+        <div class="relative container mx-auto px-6">
+
+            <img src="./img/read-note.png" alt="" class="hidden xl:block absolute -left-10">
+            <img src="./img/comment-note.png" alt="" class="hidden xl:block absolute bottom-0 -left-10">
+            <img src="./img/rate-note.png" alt="" class="hidden xl:block absolute -bottom-44 -right-10">
+
+            <div class="relative px-6 xl:px-40 z-10">
+                <div class="flex flex-col md:flex-row mt-20 space-x-0 md:space-x-14">
+                    <!-- Book cover -->
+                    <div class="w-full md:w-1/3">
+                        <img src="./img/book.png" alt="" class="w-full">
+                    </div>
+                    <!-- Book description -->
+                    <div class="w-full md:w-2/3">
+                        <!-- Book name -->
+                        <h1 class="text-3xl md:text-5xl xl:text-6xl font-bold mt-3">Small brave moves</h1>
+
+                        <!-- What is the book about -->
+                        <p class="text-sm mt-5 w-full lg:w-4/5">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Mauris dignissim Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Mauris dignissim Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Mauris dignissim Lorem ipsum dolor 
+                            sit amet, consectetur adipiscing elit. Mauris dignissim Lorem 
+                            ipsum dolor sit amet, consectetur adipiscing elit. Mauris 
+                            dignissim Lorem ipsum dolor sit amet, consectetur adipiscing 
+                            elit. Mauris dignissim Lorem ipsum dolor sit amet, consectetur 
+                            adipiscing elit. Mauris dignissim Lorem ipsum dolor sit amet, 
+                            consectetur adipiscing elit. Mauris dignissim Lorem ipsum dolor 
+                            sit amet, consectetur adipiscing elit. Mauris dignissim 
+                        </p>
+
+                        <!-- Pages -->
+                        <div class="flex items-center mt-5">
+                            <p class="font-bold">Pages:</p>
+                            <p class="ml-2">545</p>
+                        </div>
+                        <!-- Author -->
+                        <div class="flex items-center mt-5">
+                            <p class="font-bold">Author:</p>
+                            <p class="ml-2">Nicole Bianchi da Silva</p>
+                        </div>
+                        <!-- Owner -->
+                        <div class="flex justify-between mt-5">
+                            <a href="#" class="flex items-center hover:underline">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                    <rect width="16" height="16" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11 5C11 6.65685 9.65685 8 8 8C6.34315 8 5 6.65685 5 5C5 3.34315 6.34315 2 8 2C9.65685 2 11 3.34315 11 5ZM10 5C10 6.10457 9.10457 7 8 7C6.89543 7 6 6.10457 6 5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" fill="black"/>
+                                    <path d="M3.5 13.5C3.5 12.9396 3.71511 12.064 4.37165 11.3345C5.01378 10.621 6.12099 10 8 10C9.87901 10 10.9862 10.621 11.6284 11.3345C12.2849 12.064 12.5 12.9396 12.5 13.5C12.5 13.7761 12.7239 14 13 14C13.2761 14 13.5 13.7761 13.5 13.5C13.5 12.727 13.2151 11.6027 12.3716 10.6655C11.5138 9.71233 10.121 9 8 9C5.87901 9 4.48622 9.71233 3.62835 10.6655C2.78489 11.6027 2.5 12.727 2.5 13.5C2.5 13.7761 2.72386 14 3 14C3.27614 14 3.5 13.7761 3.5 13.5Z" fill="black"/>
+                                </svg>
+                                oliinykkk.near
+                            </a>
+                            <p class="flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 w-5 h-5" viewBox="0 0 16 16" fill="none">
+                                    <path d="M8.5 5C8.5 4.72386 8.27614 4.5 8 4.5C7.72386 4.5 7.5 4.72386 7.5 5V7.89645C7.5 8.09536 7.57902 8.28612 7.71967 8.42678L9.64645 10.3536C9.84171 10.5488 10.1583 10.5488 10.3536 10.3536C10.5488 10.1583 10.5488 9.84171 10.3536 9.64645L8.5 7.79289V5Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 8C14 11.3137 11.3137 14 8 14C4.68629 14 2 11.3137 2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8ZM12.9754 8.4994C12.7411 10.8621 10.8621 12.7411 8.4994 12.9754C8.48656 12.7107 8.26788 12.5 8 12.5C7.73212 12.5 7.51344 12.7107 7.5006 12.9754C5.13791 12.7411 3.25893 10.8621 3.02463 8.4994C3.28933 8.48656 3.5 8.26788 3.5 8C3.5 7.73212 3.28933 7.51344 3.02463 7.5006C3.25893 5.13791 5.13791 3.25893 7.5006 3.02463C7.51344 3.28933 7.73212 3.5 8 3.5C8.26788 3.5 8.48656 3.28933 8.4994 3.02463C10.8621 3.25893 12.7411 5.13791 12.9754 7.5006C12.7107 7.51344 12.5 7.73212 12.5 8C12.5 8.26788 12.7107 8.48656 12.9754 8.4994Z" fill="black"/>
+                                    </svg>
+                                22.05.2021
+                            </p>
+                        </div>
+                        
+                        <!-- Get this book - Rate this book -->
+                        <div class="flex flex-col items-center md:flex-row mt-10">
+
+                            <!-- Get this book -->
+                            <a href="#" class="w-1/2 h-14 bg-gradient-to-r from-orange-400 to-orange-300 rounded-full p-0.5 transform active:scale-95 duration-100">
+                                <div class="w-full h-full rounded-full bg-transparent hover:bg-white">
+                                    <p class="flex items-center justify-center w-full h-full text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white hover:from-orange-400 to-white hover:to-orange-300">Get this book</p>
+                                </div>
+                            </a>
+
+                            <!-- Rate -->
+                            <div class="mt-4 md:mt-0 md:ml-10">
+                                <p class="text-xl font-bold">Rate this book</p>
+                                <!-- Rate stars -->
+                                <div class="flex items-center space-x-0.5 mt-2">
+
+                                    <!-- One star -->
+                                    <a href="#" class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                            <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                                        </svg>
+                                    </a>
+                                    <!-- One star -->
+                                    <a href="#" class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                            <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                                        </svg>
+                                    </a>
+                                    <!-- One star -->
+                                    <a href="#" class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                            <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                                        </svg>
+                                    </a>
+                                    <!-- One star -->
+                                    <a href="#" class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                            <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                                        </svg>
+                                    </a>
+                                    <!-- One star -->
+                                    <a href="#" class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                            <path d="M10.5882 0L14.1874 6.13638L21.1765 7.63932L16.4118 12.9348L17.1321 20L10.5882 17.1364L4.04434 20L4.7647 12.9348L0 7.63932L6.98909 6.13638L10.5882 0Z" fill="#FFCB45"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Comment section -->
+    <section>
+        <div class="container mx-auto px-6 mt-12 md:mt-16 xl:mt-20">
+            <div class="px-6 xl:px-40">
+                <p class="text-4xl md:text-6xl font-bold">Comments</p>
+                <p class="text-lg mt-2">Top books of this week by NEAR readers.</p>
+
+                <!-- Write message section -->
+                <form action="" class="flex items-center mt-7">
+                    <div class="w-full lg:w-1/2">
+                        <p class="text-lg font-bold pl-6">Leave a comment</p>
+                        <textarea name="" id="" cols="30" rows="3" class="mt-2 w-full px-6 py-3 border-2 outline-none border-gray-300 focus:border-orange-300 rounded-3xl" placeholder="Write here..."></textarea>
+                    </div>
+                    <a href="#" class="text-2xl mt-4 ml-10 font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-300 transform active:scale-95 duration-100">Send</a>
+                </form>
+            </div>
+        </div>
+        <div class="w-full h-0.5 bg-gray-300 my-12"></div>
+        <div class="relative container mx-auto px-6">
+
+            <img src="./img/active-note.png" alt="" class="hidden xl:block absolute -left-10 top-52">
+
+            <div class="relative px-6 xl:px-40 z-10">
+                <!-- One comment -->
+                <div class="mt-10">
+
+                    <div class="flex justify-between">
+                        <a href="" class="text-xl font-bold">nazarnyzhnyk.near</a>
+                        <p class="text-gray-400">22.05.2021 14:23</p>
+                    </div>
+
+                    <p class="mt-4 text-xl">
+                        That's a fantastic new app feature. You and your team did an excellent 
+                        job of incorporating user testing feedback.That's a fantastic new app 
+                        feature. You and your team did an excellent job of incorporating user 
+                        testing feedback.
+                    </p>
+
+                    <div class="flex items-center mt-4">
+                        <p class="text-gray-400 font-bold"> 2 Likes</p>
+                        <p class="text-gray-400 font-bold ml-4"> 2 Dislikes</p>
+                        <!-- Reply btn -->
+                        <a href="#" class="ml-10 flex items-center text-gray-400 hover:text-orange-300 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M17.9927 16.7932L23.9902 10.7956L17.9927 4.79803" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.79785 23.9902V15.5936C4.79785 14.3211 5.30336 13.1007 6.20317 12.2009C7.10298 11.3011 8.32338 10.7956 9.59591 10.7956H23.9901" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Reply
+                        </a>
+                        <!-- Like btn -->
+                        <a href="#" class="ml-auto text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M8.39649 26.3893H4.79795C4.16169 26.3893 3.55149 26.1365 3.10158 25.6866C2.65168 25.2367 2.39893 24.6265 2.39893 23.9903V15.5937C2.39893 14.9574 2.65168 14.3472 3.10158 13.8973C3.55149 13.4474 4.16169 13.1946 4.79795 13.1946H8.39649M16.7931 10.7956V5.99756C16.7931 5.04317 16.414 4.12786 15.7391 3.45301C15.0642 2.77815 14.1489 2.39902 13.1945 2.39902L8.39649 13.1946V26.3893H21.927C22.5056 26.3958 23.067 26.1931 23.5079 25.8183C23.9487 25.4436 24.2393 24.9222 24.326 24.3501L25.9814 13.5545C26.0335 13.2107 26.0104 12.8596 25.9134 12.5256C25.8164 12.1916 25.648 11.8827 25.4198 11.6203C25.1916 11.3579 24.9091 11.1482 24.5918 11.0058C24.2745 10.8634 23.9301 10.7917 23.5823 10.7956H16.7931Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <!-- Dislike btn -->
+                        <a href="#" class="ml-4 text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M21.1802 3.20434H24.7787C25.415 3.20434 26.0252 3.4571 26.4751 3.907C26.925 4.35691 27.1777 4.96711 27.1777 5.60337L27.1777 14C27.1777 14.6362 26.925 15.2464 26.4751 15.6963C26.0252 16.1462 25.415 16.399 24.7787 16.399H21.1802M12.7836 18.798L12.7836 23.5961C12.7836 24.5505 13.1627 25.4658 13.8376 26.1406C14.5124 26.8155 15.4277 27.1946 16.3821 27.1946L21.1802 16.399L21.1802 3.20434L7.64965 3.20434C7.0711 3.1978 6.50966 3.40058 6.06881 3.7753C5.62795 4.15003 5.33738 4.67146 5.25063 5.24352L3.5953 16.0391C3.54311 16.383 3.5663 16.734 3.66326 17.068C3.76023 17.402 3.92864 17.7109 4.15684 17.9733C4.38504 18.2358 4.66757 18.4454 4.98485 18.5878C5.30213 18.7302 5.64658 18.802 5.99433 18.798H12.7836Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- Reply comment -->
+                <div class="mt-10 pl-20 border-l-4 border-dashed  border-gray-300">
+
+                    <div class="flex justify-between">
+                        <a href="" class="text-xl font-bold">nazarnyzhnyk.near</a>
+                        <p class="text-gray-400">22.05.2021 14:23</p>
+                    </div>
+
+                    <p class="mt-4 text-xl">
+                        That's a fantastic new app feature. You and your team did an excellent 
+                        job of incorporating user testing feedback.That's a fantastic new app 
+                        feature. You and your team did an excellent job of incorporating user 
+                        testing feedback.
+                    </p>
+
+                    <div class="flex items-center mt-4">
+                        <p class="text-gray-400 font-bold"> 2 Likes</p>
+                        <p class="text-gray-400 font-bold ml-4"> 2 Dislikes</p>
+                        <!-- Reply btn -->
+                        <a href="#" class="ml-10 flex items-center text-gray-400 hover:text-orange-300 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M17.9927 16.7932L23.9902 10.7956L17.9927 4.79803" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.79785 23.9902V15.5936C4.79785 14.3211 5.30336 13.1007 6.20317 12.2009C7.10298 11.3011 8.32338 10.7956 9.59591 10.7956H23.9901" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Reply
+                        </a>
+                        <!-- Like btn -->
+                        <a href="#" class="ml-auto text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M8.39649 26.3893H4.79795C4.16169 26.3893 3.55149 26.1365 3.10158 25.6866C2.65168 25.2367 2.39893 24.6265 2.39893 23.9903V15.5937C2.39893 14.9574 2.65168 14.3472 3.10158 13.8973C3.55149 13.4474 4.16169 13.1946 4.79795 13.1946H8.39649M16.7931 10.7956V5.99756C16.7931 5.04317 16.414 4.12786 15.7391 3.45301C15.0642 2.77815 14.1489 2.39902 13.1945 2.39902L8.39649 13.1946V26.3893H21.927C22.5056 26.3958 23.067 26.1931 23.5079 25.8183C23.9487 25.4436 24.2393 24.9222 24.326 24.3501L25.9814 13.5545C26.0335 13.2107 26.0104 12.8596 25.9134 12.5256C25.8164 12.1916 25.648 11.8827 25.4198 11.6203C25.1916 11.3579 24.9091 11.1482 24.5918 11.0058C24.2745 10.8634 23.9301 10.7917 23.5823 10.7956H16.7931Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <!-- Dislike btn -->
+                        <a href="#" class="ml-4 text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M21.1802 3.20434H24.7787C25.415 3.20434 26.0252 3.4571 26.4751 3.907C26.925 4.35691 27.1777 4.96711 27.1777 5.60337L27.1777 14C27.1777 14.6362 26.925 15.2464 26.4751 15.6963C26.0252 16.1462 25.415 16.399 24.7787 16.399H21.1802M12.7836 18.798L12.7836 23.5961C12.7836 24.5505 13.1627 25.4658 13.8376 26.1406C14.5124 26.8155 15.4277 27.1946 16.3821 27.1946L21.1802 16.399L21.1802 3.20434L7.64965 3.20434C7.0711 3.1978 6.50966 3.40058 6.06881 3.7753C5.62795 4.15003 5.33738 4.67146 5.25063 5.24352L3.5953 16.0391C3.54311 16.383 3.5663 16.734 3.66326 17.068C3.76023 17.402 3.92864 17.7109 4.15684 17.9733C4.38504 18.2358 4.66757 18.4454 4.98485 18.5878C5.30213 18.7302 5.64658 18.802 5.99433 18.798H12.7836Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- One comment -->
+                <div class="mt-10">
+
+                    <div class="flex justify-between">
+                        <a href="" class="text-xl font-bold">nazarnyzhnyk.near</a>
+                        <p class="text-gray-400">22.05.2021 14:23</p>
+                    </div>
+
+                    <p class="mt-4 text-xl">
+                        That's a fantastic new app feature. You and your team did an excellent 
+                        job of incorporating user testing feedback.That's a fantastic new app 
+                        feature. You and your team did an excellent job of incorporating user 
+                        testing feedback.
+                    </p>
+
+                    <div class="flex items-center mt-4">
+                        <p class="text-gray-400 font-bold"> 2 Likes</p>
+                        <p class="text-gray-400 font-bold ml-4"> 2 Dislikes</p>
+                        <!-- Reply btn -->
+                        <a href="#" class="ml-10 flex items-center text-gray-400 hover:text-orange-300 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M17.9927 16.7932L23.9902 10.7956L17.9927 4.79803" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.79785 23.9902V15.5936C4.79785 14.3211 5.30336 13.1007 6.20317 12.2009C7.10298 11.3011 8.32338 10.7956 9.59591 10.7956H23.9901" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Reply
+                        </a>
+                        <!-- Like btn -->
+                        <a href="#" class="ml-auto text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                                <path d="M8.39649 26.3893H4.79795C4.16169 26.3893 3.55149 26.1365 3.10158 25.6866C2.65168 25.2367 2.39893 24.6265 2.39893 23.9903V15.5937C2.39893 14.9574 2.65168 14.3472 3.10158 13.8973C3.55149 13.4474 4.16169 13.1946 4.79795 13.1946H8.39649M16.7931 10.7956V5.99756C16.7931 5.04317 16.414 4.12786 15.7391 3.45301C15.0642 2.77815 14.1489 2.39902 13.1945 2.39902L8.39649 13.1946V26.3893H21.927C22.5056 26.3958 23.067 26.1931 23.5079 25.8183C23.9487 25.4436 24.2393 24.9222 24.326 24.3501L25.9814 13.5545C26.0335 13.2107 26.0104 12.8596 25.9134 12.5256C25.8164 12.1916 25.648 11.8827 25.4198 11.6203C25.1916 11.3579 24.9091 11.1482 24.5918 11.0058C24.2745 10.8634 23.9301 10.7917 23.5823 10.7956H16.7931Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <!-- Dislike btn -->
+                        <a href="#" class="ml-4 text-gray-400 hover:text-orange-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                                <path d="M21.1802 3.20434H24.7787C25.415 3.20434 26.0252 3.4571 26.4751 3.907C26.925 4.35691 27.1777 4.96711 27.1777 5.60337L27.1777 14C27.1777 14.6362 26.925 15.2464 26.4751 15.6963C26.0252 16.1462 25.415 16.399 24.7787 16.399H21.1802M12.7836 18.798L12.7836 23.5961C12.7836 24.5505 13.1627 25.4658 13.8376 26.1406C14.5124 26.8155 15.4277 27.1946 16.3821 27.1946L21.1802 16.399L21.1802 3.20434L7.64965 3.20434C7.0711 3.1978 6.50966 3.40058 6.06881 3.7753C5.62795 4.15003 5.33738 4.67146 5.25063 5.24352L3.5953 16.0391C3.54311 16.383 3.5663 16.734 3.66326 17.068C3.76023 17.402 3.92864 17.7109 4.15684 17.9733C4.38504 18.2358 4.66757 18.4454 4.98485 18.5878C5.30213 18.7302 5.64658 18.802 5.99433 18.798H12.7836Z" stroke="currentColor" stroke-width="2.39903" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mx-auto px-6 mt-20">
+            <div class="flex flex-col md:flex-row">
+
+                <div class="flex flex-col">
+                    <a href="#" class="flex items-center">
+                        <img src="./img/near_logo_stack 1.png" alt="" class="">
+                        <span class="block w-0.5 h-12 ml-1 mr-2 rounded-full bg-black"></span>
+                        <p class="text-4xl font-bold pb-2">Library</p>
+                    </a>
+                    <a href="#" class="mt-1">
+                        info@nearlibrary
+                    </a>
+                    <a href="#" class="mt-1">
+                        1-232-3434 (Main)
+                    </a>
+                </div>
+
+                <div class="w-auto md:ml-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-x-14 lg:gap-x-28 xl:gap-x-40 gap-y-10">
+                    <!-- About -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">About</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="./alert-successful.html" class="hover:text-black font-medium">About contract</a></li>
+                        <li><a href="./alert-failed.html" class="hover:text-black font-medium">About NEAR </a></li>
+                        <li><a href="./alert-delete.html" class="hover:text-black font-medium">About NEAR ecosystem</a></li>
+                    </ul>
+                </div>
+
+                <!-- Community -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">Community</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="" class="hover:text-black font-medium">Community OS Wiki</a></li>
+                        <li><a href="" class="hover:text-black font-medium">Forum</a></li>
+                        <li><a href="" class="hover:text-black font-medium">Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Help -->
+                <div class="">
+                    <h5 class="text-2xl font-bold mt-2">Help</h5>
+                    <ul class="mt-4 space-y-2 text-gray-600">
+                        <li><a href="" class="hover:text-black font-medium">Support</a></li>
+                        <li><a href="" class="hover:text-black font-medium">info@nearanalytics</a></li>
+                        <li><a href="" class="hover:text-black font-medium">1-232-3434 (Main)</a></li>
+                    </ul>
+                </div>
+                </div>
+
+            </div>
+            <div class="flex justify-center my-10">
+                <p class="">© 2021 NEAR Ltd</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

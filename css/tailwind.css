@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    .near-logo-img {
+        width: 93px;
+        height: 116px;
+    }
+    .main-book {
+        min-height: 282px;
+        width: 323px;
+    }
+    .w-alert {
+        width: 312px;
+    }
+    @screen md {
+        .near-logo-img{
+            width: px;
+        }
+        .main-book {
+            min-height: 282px;
+            width: 376px;
+        }
+        .w-alert {
+            width: 498px;
+        }
+    }
+    @screen lg {
+        .near-logo-img{
+            width: 140px;
+            height: 175px;
+        }
+        .main-book {
+            min-height: 376px;
+            width: 431px;
+        }
+    }
+    @screen xl {
+        .main-book {
+            min-height: 451px;
+            width: 516px;
+        }
+    }
+    @screen 2xl {
+        .main-book {
+            min-height: 469px;
+            width: 646px;
+        }
+    }
+}
